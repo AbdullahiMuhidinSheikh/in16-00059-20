@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>KISII UNIVERSITY</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,
++300;1,200;1,300&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/thinline.css" />
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="indwex.html"><img src="images/logo.png" /></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times-circle" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME </a></li>
+                    <li><a href="about.html"> ABOUT </a></li>
+                    <li><a href="course.html"> COURSE </a></li>
+                    <li><a href="blog.html"> BLOG </a></li>
+                    <li><a href="contact.html"> CONTACT </a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Contact Us</h1>
+    </section>
+    <!--- Contact Us-->
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63832.68963902323!2d34.79117096944196!3d-0.6727780582130704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182b3f6840164ff1%3A0x8040e0d2e546b570!2sKisii%20University%20Main%20Campus!5e0!3m2!1sen!2ske!4v1650567766749!5m2!1sen!2ske"
+            width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    <section class="contact us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fab fa-home"></i>
+                    <span>
+              <h5>Administration Building, Kisii University</h5>
+              <p>Kisii, Kisii-Kenya</p>
+            </span>
+                </div>
+                <div>
+                    <i class="fab fa-phone"></i>
+                    <span>
+              <h5>+254724355673</h5>
+              <p>Monday to Friday, 8.00AM to 4.00PM</p>
+            </span>
+                </div>
+                <div>
+                    <i class="fab fa-envelope-o"></i>
+                    <span>
+              <h5>info@kisiiUniversity.ac.ke</h5>
+              <p>Email us Your Query</p>
+            </span>
+                </div>
+            </div>
+            <div class="contact-col">
+                <form action=" form-handler.php" method="post">
+                    <input type="text" name="name" placeholder="Enter Your Name" required />
+                    <input type="email" name="email" placeholder="Enter email address" required />
+                    <input type="text" name="subject" placeholder="Enter Your Course" required />
+                    <textarea rows="8" name="message" placeholder="Message" required></textarea>
+                    <button type="Submit" class="hero-btn red-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!---Footer--->
+    <section class="Footer">
+        <h4>About Us</h4>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel aliquid.
+        </p>
+        <div class="icons">
+            <i class="uil uil-facebook-messenger-alt"></i>
+        </div>
+        <p>Made by <i class="fa fa-heart-o"></i> @MuhidinBB</p>
+    </section>
+
+    <!--------javaScript for Toggle Menu ----->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>
